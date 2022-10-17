@@ -9,7 +9,7 @@
     "permissions": [
         "alarms",
         "notifications",
-        "permissions"
+        "storage"
     ],
     "background": {
         "persistent": false,
