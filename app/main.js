@@ -1,8 +1,5 @@
-const button = document.createElement('button');
-button.textContent = 'Greet me!';
-document.body.insertAdjacentElement('afterbegin', button);
-
-button.addEventListener('click', () => {
+document.querySelector("button")?.addEventListener('click', () => {
+    // const interval = setInterval(() => {
     chrome.runtime.sendMessage('',
         {
             type: 'notification',
@@ -13,4 +10,5 @@ button.addEventListener('click', () => {
                 type: 'basic'
             }
         });
+    // }, 60000);
 });
